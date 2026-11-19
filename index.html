@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>The Other Angle</title>
+  <meta name="description" content="Free extra resources for every class of Marc Brunet's ARTSchool. Same lessons, another angle." />
+  <meta property="og:title" content="The Other Angle" />
+  <meta property="og:description" content="Didn't click the first time? Free extra videos for every class, term by term." />
+  <meta name="theme-color" content="#f3ede3" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&family=Caveat:wght@500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <canvas id="scene" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="brand" href="#top" aria-label="The Other Angle, home">
+      <svg viewBox="0 0 32 32" width="26" height="26" aria-hidden="true"><path d="M6 11l10-5 10 5v10l-10 5-10-5z M6 11l10 5 10-5 M16 16v10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+      <span>The Other Angle</span>
+    </a>
+    <nav class="links">
+      <a href="#curriculum" data-i18n="nav.curriculum"></a>
+      <a href="#tips" data-i18n="nav.tips"></a>
+      <a href="#about" data-i18n="nav.about"></a>
+      <a href="#thanks" data-i18n="nav.thanks"></a>
+      <a href="#contact" data-i18n="nav.contact"></a>
+    </nav>
+    <div class="lang" role="group" aria-label="Language">
+      <button type="button" data-lang="en">EN</button>
+      <button type="button" data-lang="fr">FR</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <p class="kicker" data-i18n="hero.kicker"></p>
+      <h1 data-i18n-html="hero.title"></h1>
+      <p class="lead" data-i18n="hero.lead"></p>
+      <div class="ctas">
+        <a class="btn primary" href="#term-1" data-i18n="hero.cta"></a>
+        <a class="btn" href="#about" data-i18n="hero.cta2"></a>
+      </div>
+      <span class="scroll-hint" data-i18n="hero.scroll"></span>
+    </section>
+
+    <section class="how wrap">
+      <h2 data-i18n="how.title"></h2>
+      <ol class="steps">
+        <li><span class="num">1</span><h3 data-i18n="how.1.t"></h3><p data-i18n="how.1.d"></p></li>
+        <li><span class="num">2</span><h3 data-i18n="how.2.t"></h3><p data-i18n="how.2.d"></p></li>
+        <li><span class="num">3</span><h3 data-i18n="how.3.t"></h3><p data-i18n="how.3.d"></p></li>
+      </ol>
+      <p class="warn hand" data-i18n="how.warn"></p>
+    </section>
+
+    <section id="curriculum" class="wrap">
+      <h2 data-i18n="cur.title"></h2>
+      <p class="sub" data-i18n="cur.lead"></p>
+      <div id="terms" class="terms"></div>
+    </section>
+
+    <section id="tips" class="wrap">
+      <h2 data-i18n="tips.title"></h2>
+      <p class="sub" data-i18n="tips.lead"></p>
+      <div class="tips">
+        <article class="card tip">
+          <h3 data-i18n="tips.forms.t"></h3>
+          <p data-i18n="tips.forms.d"></p>
+          <div class="card-links"><a href="https://practicedrawingthis.com/" target="_blank" rel="noopener">Practice Drawing This ↗</a></div>
+        </article>
+        <article class="card tip">
+          <h3 data-i18n="tips.gesture.t"></h3>
+          <p data-i18n="tips.gesture.d"></p>
+          <div class="card-links">
+            <a href="https://line-of-action.com/" target="_blank" rel="noopener">Line of Action ↗</a>
+            <a href="https://quickposes.com/" target="_blank" rel="noopener">Quickposes ↗</a>
+          </div>
+        </article>
+        <article class="card tip">
+          <h3 data-i18n="tips.focus.t"></h3>
+          <p data-i18n="tips.focus.d"></p>
+        </article>
+        <article class="card tip">
+          <h3 data-i18n="tips.watch.t"></h3>
+          <p data-i18n="tips.watch.d"></p>
+        </article>
+        <article class="card tip">
+          <h3 data-i18n="tips.redo.t"></h3>
+          <p data-i18n="tips.redo.d"></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="wrap about">
+      <h2 data-i18n="about.title"></h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p data-i18n="about.p1"></p>
+          <p data-i18n="about.p2"></p>
+          <p data-i18n="about.p3"></p>
+          <p data-i18n="about.p4"></p>
+          <p data-i18n="about.p5"></p>
+        </div>
+        <div class="progress">
+          <figure class="shot before">
+            <span class="tag" data-i18n="about.before"></span>
+            <button type="button" class="zoom" data-zoom="/me/before.webp" aria-label="Zoom"><img src="/me/before.webp" width="1499" height="2000" loading="lazy" alt="Nabil's early sketches of faces" /></button>
+            <figcaption class="hand" data-i18n="about.beforeCap"></figcaption>
+          </figure>
+          <figure class="shot after">
+            <span class="tag" data-i18n="about.after"></span>
+            <button type="button" class="zoom" data-zoom="/me/after.webp" aria-label="Zoom"><img src="/me/after.webp" width="2000" height="1499" loading="lazy" alt="Nabil's grayscale painting of an archer shooting a glowing arrow" /></button>
+            <figcaption class="hand" data-i18n="about.afterCap"></figcaption>
+          </figure>
+          <p class="progress-note hand" data-i18n="about.progress"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="thanks" class="wrap">
+      <h2 data-i18n="thanks.title"></h2>
+      <p class="sub" data-i18n="thanks.lead"></p>
+      <div class="thanks">
+        <article class="card">
+          <p class="role" data-i18n="thanks.marc.role"></p>
+          <h3>Marc Brunet</h3>
+          <p data-i18n="thanks.marc.d"></p>
+          <div class="card-links">
+            <a href="https://www.youtube.com/@MarcBrunet" target="_blank" rel="noopener">YouTube ↗</a>
+            <a href="https://cubebrush.co/mb" target="_blank" rel="noopener">ARTSchool ↗</a>
+          </div>
+        </article>
+        <article class="card">
+          <p class="role" data-i18n="thanks.artwod.role"></p>
+          <h3>Artwod</h3>
+          <p data-i18n="thanks.artwod.d"></p>
+          <div class="card-links">
+            <a href="https://www.youtube.com/@Artwod" target="_blank" rel="noopener">YouTube ↗</a>
+            <a href="https://www.artwod.com" target="_blank" rel="noopener">artwod.com ↗</a>
+          </div>
+        </article>
+        <article class="card">
+          <p class="role" data-i18n="thanks.sam.role"></p>
+          <h3>SamDoesArts</h3>
+          <p data-i18n="thanks.sam.d"></p>
+          <div class="card-links">
+            <a href="https://www.youtube.com/@SamDoesArts" target="_blank" rel="noopener">YouTube ↗</a>
+          </div>
+        </article>
+      </div>
+      <p class="also" data-i18n="thanks.also"></p>
+    </section>
+
+    <section id="contact" class="wrap contact">
+      <h2 data-i18n="contact.title"></h2>
+      <p class="sub" data-i18n="contact.lead"></p>
+      <div class="contact-row">
+        <div class="pill">
+          <span class="pill-label">Discord</span>
+          <code>yoda77777</code>
+          <button type="button" class="copy" data-copy="yoda77777" data-i18n="contact.copy"></button>
+        </div>
+        <a class="pill" href="https://www.tiktok.com/@ibylenart" target="_blank" rel="noopener">
+          <span class="pill-label">TikTok</span>
+          <code>@ibylenart</code>
+          <span aria-hidden="true">↗</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="foot wrap">
+    <p data-i18n="foot.disclaimer"></p>
+    <p><a href="https://www.soloartcurriculum.com/" target="_blank" rel="noopener" data-i18n="foot.inspired"></a></p>
+    <p class="hand"><span data-i18n="foot.made"></span> <a href="https://www.tiktok.com/@ibylenart" target="_blank" rel="noopener">Ibylen</a></p>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Drawing">
+    <button type="button" class="close" data-close aria-label="Close">✕</button>
+    <img alt="" />
+  </dialog>
+
+  <dialog id="panel" aria-labelledby="panel-title">
+    <div class="panel-inner">
+      <button type="button" class="close" data-close aria-label="Close">✕</button>
+      <p class="panel-term"></p>
+      <h2 id="panel-title"></h2>
+      <div class="panel-note">
+        <p class="label" data-i18n="panel.note"></p>
+        <p class="hand note-text"></p>
+      </div>
+      <p class="label" data-i18n="panel.res"></p>
+      <ul class="res"></ul>
+      <div class="panel-try">
+        <p class="label" data-i18n="panel.try"></p>
+        <p class="try-text"></p>
+      </div>
+    </div>
+  </dialog>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
